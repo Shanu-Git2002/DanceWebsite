@@ -1,0 +1,42 @@
+extends base.pug 
+block scripts
+ script(src='/static/index.js')
+block style  
+    style 
+      include ../static/style.css
+block content
+    
+    section#introSection
+          div Welcome to shanu's Dance Academy  
+          div.small Dance is romance  
+    section#missionSection 
+          h2 Our Mission
+          div.card 
+              h3 Dance Perfection
+              div.card-box
+                  div.card-img
+                    img(src="../static/img/Screenshot(123).png", alt="")
+                  
+                  div.card-content
+                     p I dance because there’s no greater feeling in the world than moving a piece of music and letting the rest of the world disappear.
+          div.card 
+              h3 Dance the way you like
+              div.card-box
+                  div.card-img
+                    img(src="/static/img/images.jpg", alt="")
+                  
+                  div.card-content
+                     p When you do dance, I wish you a wave o' the sea, that you might ever do nothing but that. For you and I are past our dancing days.
+          div.card 
+              h3 Expert teaching
+              div.card-box
+                  div.card-img
+                    img(src="/static/img/images.jpg", alt="")
+                  
+                  div.card-content
+                     p One who expresses one's self through dance is a dancer. One who expresses one's self through a dancer is a dance teacher. 
+    section#sponserSection 
+          h2 Our Sponsors
+          div#sponsers
+            img(src="https://www.bearboating.org/wp-content/uploads/2020/03/sponsors-dance.jpg", alt="sponser", class="spimage")
+            img(src="http://dwcworld.com/img/uploads/news/2018%20DWC%20World%20Finals%20Sponsor.jpg", alt="sponser", class="spimage")
